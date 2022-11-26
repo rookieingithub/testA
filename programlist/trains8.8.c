@@ -26,7 +26,7 @@ void func_echo(void)
 bool optionalchar(char ch,char *opt)
 {
     int i;
-    for (i = 0; i < sizeof(opt); i++)
+    for (i = 0; i < sizeof(opt) / sizeof(opt[0]); i++)
     {
         if (opt[i] == ch)
         {
