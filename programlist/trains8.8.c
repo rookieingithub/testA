@@ -42,7 +42,7 @@ bool optionalchar(char ch,char *opt)
 char notblank(void)
 {
     char ch;
-    char space[32] = {'\n','\t',' '};
+    char space[3] = {'\n','\t',' '};
     ch = getchar();
     while (optionalchar(ch,space))
     {
